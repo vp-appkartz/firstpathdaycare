@@ -89,7 +89,14 @@ const ProgramDetails = () => {
   const colors = ['bg-blue', 'bg-purple', 'bg-pink', 'bg-teal', 'bg-orange'];
 
   return (
-    <div className="program-details-page">
+    <div className="program-details-page" style={{ position: 'relative', overflow: 'hidden' }}>
+      {/* Decorative Floating Icons */}
+      <img src="/media/story_animation_1-1.png" alt="" className="floating-icon delay-1" style={{ top: '15%', left: '3%', width: '80px', opacity: 0.35, zIndex: 0 }} />
+      <img src="/media/story_animation_2-1.png" alt="" className="floating-icon delay-2" style={{ top: '40%', right: '4%', width: '75px', opacity: 0.35, zIndex: 0 }} />
+      <img src="/media/story_animation_3-1.png" alt="" className="floating-icon delay-3" style={{ bottom: '25%', left: '4%', width: '90px', opacity: 0.35, zIndex: 0 }} />
+      <img src="/media/story_animation_4.png" alt="" className="floating-icon delay-4" style={{ top: '65%', right: '5%', width: '85px', opacity: 0.35, zIndex: 0 }} />
+      <img src="/media/Graphic.png" alt="" className="floating-icon delay-2" style={{ bottom: '10%', right: '10%', width: '120px', opacity: 0.25, zIndex: 0 }} />
+
       <div className="page-header program-page-header">
         <div className="container" style={{ position: 'relative', zIndex: 3 }}>
           <h1 className="program-hero-title">{program.title}</h1>

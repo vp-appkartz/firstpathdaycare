@@ -35,7 +35,13 @@ const Gallery = () => {
   };
 
   return (
-    <div className="gallery-page">
+    <div className="gallery-page animate-up" style={{ position: 'relative', overflow: 'hidden' }}>
+      {/* Decorative Floating Icons */}
+      <img src="/media/story_animation_1-1.png" alt="" className="floating-icon delay-1" style={{ position: 'absolute', top: '15%', left: '3%', width: '80px', opacity: 0.35, zIndex: 0 }} />
+      <img src="/media/story_animation_2-1.png" alt="" className="floating-icon delay-2" style={{ position: 'absolute', top: '40%', right: '4%', width: '75px', opacity: 0.35, zIndex: 0 }} />
+      <img src="/media/story_animation_3-1.png" alt="" className="floating-icon delay-3" style={{ position: 'absolute', bottom: '25%', left: '4%', width: '90px', opacity: 0.35, zIndex: 0 }} />
+      <img src="/media/story_animation_4.png" alt="" className="floating-icon delay-4" style={{ position: 'absolute', top: '65%', right: '5%', width: '85px', opacity: 0.35, zIndex: 0 }} />
+      
       <div className="page-header">
         <div className="container">
           <h1>Our Photo Gallery</h1>

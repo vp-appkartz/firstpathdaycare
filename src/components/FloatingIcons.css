@@ -9,7 +9,7 @@
   gap: 12px;
 }
 
-.floating-icon {
+.social-floating-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,27 +23,27 @@
   text-decoration: none;
 }
 
-.floating-icon:hover {
+.social-floating-icon:hover {
   transform: scale(1.15) translateX(-5px);
   color: white;
 }
 
-.floating-icon.phone { background-color: #1bab9d; }
-.floating-icon.mail { background-color: #eb9620; }
-.floating-icon.facebook { background-color: #0889b0; }
-.floating-icon.instagram { background-color: #e16f1d; }
+.social-floating-icon.phone { background-color: #1bab9d; }
+.social-floating-icon.mail { background-color: #eb9620; }
+.social-floating-icon.facebook { background-color: #0889b0; }
+.social-floating-icon.instagram { background-color: #e16f1d; }
 
 @media (max-width: 1300px) {
   /* On mid-sized screens, shrink icons and make them slightly transparent to minimize visual obstruction */
-  .floating-icon {
+  .social-floating-icon {
     width: 42px;
     height: 42px;
     opacity: 0.85;
   }
-  .floating-icon:hover {
+  .social-floating-icon:hover {
     opacity: 1;
   }
-  .floating-icon svg {
+  .social-floating-icon svg {
     width: 18px;
     height: 18px;
   }
@@ -59,7 +59,7 @@
     gap: 10px;
   }
   
-  .floating-icon {
+  .social-floating-icon {
     width: 40px;
     height: 40px;
     opacity: 0.9;
