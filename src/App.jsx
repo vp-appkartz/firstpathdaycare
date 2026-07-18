@@ -8,6 +8,7 @@ import ProgramDetails from './pages/ProgramDetails';
 import Menu from './pages/Menu';
 import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
+import FloatingIcons from './components/FloatingIcons';
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -39,6 +40,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <FloatingIcons />
         <ScrollToTop />
       </div>
     </Router>

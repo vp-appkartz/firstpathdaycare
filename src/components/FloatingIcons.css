@@ -1,0 +1,67 @@
+.floating-icons-container {
+  position: fixed;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.floating-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-decoration: none;
+}
+
+.floating-icon:hover {
+  transform: scale(1.15) translateX(-5px);
+  color: white;
+}
+
+.floating-icon.phone { background-color: #1bab9d; }
+.floating-icon.mail { background-color: #eb9620; }
+.floating-icon.facebook { background-color: #0889b0; }
+.floating-icon.instagram { background-color: #e16f1d; }
+
+@media (max-width: 1300px) {
+  /* On mid-sized screens, shrink icons and make them slightly transparent to minimize visual obstruction */
+  .floating-icon {
+    width: 42px;
+    height: 42px;
+    opacity: 0.85;
+  }
+  .floating-icon:hover {
+    opacity: 1;
+  }
+  .floating-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* On mobile, move to bottom right to avoid overlapping full-width text content completely */
+  .floating-icons-container {
+    top: auto;
+    bottom: 90px;
+    right: 15px;
+    transform: none;
+    gap: 10px;
+  }
+  
+  .floating-icon {
+    width: 40px;
+    height: 40px;
+    opacity: 0.9;
+  }
+}
