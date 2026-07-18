@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { ArrowUp } from 'lucide-react';
 import Header from './components/Header';
@@ -25,9 +25,20 @@ const ScrollToTop = () => {
   );
 };
 
+const ScrollToTopOnRoute = () => {
+  const { pathname } = useLocation();
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  
+  return null;
+};
+
 function App() {
   return (
     <Router>
+      <ScrollToTopOnRoute />
       <div className="app-container">
         <Header />
         <main className="main-content">
